@@ -1,0 +1,75 @@
+.nav-container{
+    // border: 1px solid red;
+    // background: blue;
+
+
+    // to get the logo and nav bar horizontal
+
+    display: flex;
+    flex-direction: row;
+
+
+
+    //flex wrap makes the nav bar and div go on seperate lines when 
+    //they get to close in order to prevent them scrunching together
+    flex-wrap: wrap;
+    // to get space between the two sections of the nav bar
+
+    justify-content: space-between;
+
+    //this is to create some space between the nav bar words and end of the
+    //page on both sides
+    padding: 4% 2% 2% 2%;
+
+
+    div{
+        border: 1px solid red;
+
+    }
+    nav{
+        border: 1px solid red;
+        width: 70%;
+
+        //this right aligns the content on the left side of the nav bar
+        display: flex;
+        justify-content: flex-end;
+
+    }
+
+
+    //this will get rid of the blue line undernear the <a> tags
+    div a {
+        text-decoration: none;
+        border: 1px solid red;
+    }
+
+    nav a {
+        text-decoration: none;
+        border: 1px solid red;
+
+        //this will create space between each word in the right side nav bar
+        padding: 0 1% 0 1%;
+
+        //this will create space between the 3 nav options
+        margin-left: 6%;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
