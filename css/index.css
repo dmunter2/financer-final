@@ -132,19 +132,21 @@ table {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 2% 2% 2% 2%;
+  padding: 2% 0% 2% 0%;
   margin-bottom: 2%;
 }
 .nav-container nav {
   width: 70%;
   display: flex;
   justify-content: flex-end;
+  margin-right: 4%;
 }
 .nav-container div a {
   font-family: 'Source Sans Pro', sans-serif;
   color: white;
   font-size: 2.5rem;
   text-decoration: none;
+  margin-left: 4%;
 }
 .nav-container div a:hover {
   color: #ADD8E6;
@@ -167,14 +169,19 @@ table {
     justify-content: center;
     align-items: center;
   }
+  .nav-container div a {
+    margin: 0;
+  }
   .nav-container nav {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     margin-top: 2%;
+    border-top: 2px solid white;
   }
   .nav-container nav a {
     margin: 2%;
+    font-size: 1.5rem;
   }
 }
 .home-attention-grabber {
@@ -206,6 +213,20 @@ table {
   display: flex;
   justify-content: center;
 }
+.home-box-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.home-box-container .home-box {
+  border: 1px solid red;
+  width: 390px;
+  height: 140px;
+  margin: 3%;
+  background-color: white;
+  padding: 2%;
+}
 @media (max-width: 550px) {
   .home-attention-grabber .book-advisor {
     display: none;
@@ -224,7 +245,10 @@ table {
   .home-attention-grabber .home-btn-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+  }
+  .home-attention-grabber .home-btn-container button {
+    background-color: white;
+    width: 370px;
   }
 }
