@@ -218,14 +218,30 @@ table {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 7%;
+  margin-bottom: 7%;
 }
 .home-box-container .home-box {
-  border: 1px solid red;
-  width: 390px;
+  border-radius: 10px;
+  width: 320px;
   height: 140px;
   margin: 3%;
   background-color: white;
   padding: 2%;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+.home-box-container .home-box h1 {
+  border-bottom: 2px solid #98AFC7;
+  padding-bottom: 1%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+.home-box-container .home-box p {
+  margin-top: 3%;
+  font-family: 'PT Sans', sans-serif;
+}
+.home-box-container .home-box:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 @media (max-width: 550px) {
   .home-attention-grabber .book-advisor {
