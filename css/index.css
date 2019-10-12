@@ -184,6 +184,19 @@ table {
     font-size: 1.5rem;
   }
 }
+footer div {
+  border-top: 1px solid white;
+}
+footer div nav {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10%;
+}
+footer div nav a {
+  margin: 3%;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
 .home-attention-grabber {
   margin-top: 3%;
 }
@@ -267,4 +280,15 @@ table {
     background-color: white;
     width: 370px;
   }
+}
+.products-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.products-container .product-card {
+  border: 1px solid red;
+  width: 360px;
+  margin: 4% 2% 4% 2%;
 }
