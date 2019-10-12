@@ -1,0 +1,117 @@
+.nav-container{
+    // border: 1px solid red;
+    // background: blue;
+
+    //this puts a solid green border at the bottom of the nav bar
+    border-bottom: 2px solid white;
+
+    // to get the logo and nav bar horizontal
+
+    display: flex;
+    flex-direction: row;
+
+    // background-color:#98AFC7;
+
+    //flex wrap makes the nav bar and div go on seperate lines when 
+    //they get to close in order to prevent them scrunching together
+    flex-wrap: wrap;
+    // to get space between the two sections of the nav bar
+
+    justify-content: space-between;
+
+    //this is to create some space between the nav bar words and end of the
+    //page on both sides
+    padding: 2% 2% 2% 2%;
+
+    nav{
+        width: 70%;
+
+        //this right aligns the content on the left side of the nav bar
+        display: flex;
+        justify-content: flex-end;
+
+    }
+
+
+    //this will get rid of the blue line undernear the <a> tags
+    div a {
+        font-family: @header;
+        // this is styling the 'finance' logo on the top left home page
+        color: white;
+        font-size: 2.5rem;
+        text-decoration: none;
+    }
+    div a:hover{
+        color: @bright_hover;
+    }
+
+
+
+    nav a {
+        text-decoration: none;
+        color: white;
+        //this will create space between each word in the right side nav bar
+        padding: 0 1% 0 1%;
+        font-family: @header;
+
+        //this will create space between the 3 nav options
+        margin-left: 6%;
+
+        //trying to make the nav bar and logo 'financer' look more center
+        padding-top: 2%;
+    }
+    nav a:hover {
+        //this hover effect covers the 3 nav options
+        color: @bright_hover;
+    }
+
+    // this gives a little space after the header to begin the next item
+    margin-bottom: 2%;
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media(max-width: 550px) {
+    .nav-container {
+
+        // this is here to re align the nav bar to fit a smaller user
+        // screen... part of building responsive website
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        nav{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 2%;
+            a{
+                margin: 2%;
+            }
+        }
+
+
+
+
+
+
+    }
+}

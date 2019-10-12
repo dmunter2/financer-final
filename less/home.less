@@ -1,0 +1,87 @@
+.home-attention-grabber{
+    
+    //needed a little more space around heading
+    margin-top: 3%;
+
+
+
+
+    //this is hte secure finances text, sizing and styling 
+    .home-attention{
+        font-size: 4rem;
+        margin-left: 5%;
+        font-weight: 600;
+        font-family: @title;
+        color: #ADD8E6;
+
+        h1{
+            margin: 3%;
+        }
+    }
+
+
+
+    //styling for the buttons
+    .btn {
+        width: 200px;
+        height: 40px;
+        font-size: 1rem;
+        border-radius: 7px;
+        border: 1px solid @hover_text;
+        margin: 2%;
+    }
+    .btn:hover{
+        background-color: @bright_hover;
+        color: black;
+    }
+    //this will be to center the buttons
+    .home-btn-container{
+        display: flex;
+        justify-content: center;
+    }
+
+
+}
+
+
+
+@media(max-width: 550px) {
+    .home-attention-grabber {
+
+        .book-advisor {
+            display: none;
+        }
+
+
+
+// this is to help styling the buttons and make them larger on the 
+//screen for the user when using mobile
+        .btn {
+            width: 400px;
+            height: 45px;
+            border-radius: 7px;
+            border: 1px solid @hover_text;
+            margin: 2%;
+        }
+        .btn:hover{
+            background-color: @bright_hover;
+            color: @global;
+        }
+    //this will be to center the buttons
+        .home-btn-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }   
+
+
+
+
+
+
+    }
+}
+
+
+
