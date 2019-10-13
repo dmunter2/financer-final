@@ -5,9 +5,54 @@
     flex-wrap: wrap;
 
     .product-card {
-        border: 1px solid red;
-        width: 360px;
+        width: 260px;
+        // background-color: white;
+        background-color: #ADD8E6;;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 360px;
         margin: 4% 2% 4% 2%;
+        border-radius: 10px;
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+
+        img {
+            width: 260px;
+            height: 180px;
+            border-radius: 10px 10px 0 0;
+        }
+
+        h1, p {
+            margin: 2% 0 3% 2%;
+            font-family: @paragraph;
+        }
+
+        h1 {
+            font-size: 1rem;
+            font-weight: 300;
+            width: 100%;
+        }
+
+        p {
+            font-size: .8rem;
+            width: 100%;
+        }
+
+
+
+        .product-btn {
+            margin-top: 12%;
+            width: 90%;
+            height: 40px;
+            border: none;
+            border-radius: 6px;
+            border: 1px solid @hover_text;
+            font-size: .9rem;
+        }
+        .product-btn:hover {
+            background-color: @hover_text;
+            color: white;
+        }
 
 
 
