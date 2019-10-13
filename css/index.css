@@ -190,12 +190,101 @@ footer div {
 footer div nav {
   display: flex;
   justify-content: center;
+  margin-top: 7%;
   padding-bottom: 10%;
 }
 footer div nav a {
   margin: 3%;
   color: white;
   font-family: 'Open Sans', sans-serif;
+}
+.tool-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.background-color {
+  background-color: #36454F;
+}
+.ind-container {
+  border-radius: 7px;
+  margin: 5% 0 5% 0;
+  width: 80%;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  background-color: white;
+}
+.ind-container button {
+  width: 100px;
+  height: 40px;
+  margin: 2% 0 2% 2%;
+  border: none;
+  border-radius: 6px;
+  border: 1px solid #98AFC7;
+  font-size: 0.9rem;
+  background-color: white;
+}
+.ind-container button:hover {
+  background-color: #98AFC7;
+  color: white;
+}
+.section-tool {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 7px;
+}
+.section-tool div .tool-img {
+  width: 250px;
+  border-radius: 7px 0 0 0;
+}
+.section-tool .text-tool {
+  width: 50%;
+  margin: 3% 0 0 0;
+}
+.section-tool .text-tool h1 {
+  margin-bottom: 3%;
+  margin-right: 5%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+.section-tool .text-tool p {
+  margin-right: 3%;
+  font-family: 'PT Sans', sans-serif;
+}
+@media (max-width: 750px) {
+  .tool-container {
+    justify-content: center;
+    width: 100%;
+  }
+  .ind-container {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .ind-container button {
+    margin-top: 5%;
+    width: 90%;
+  }
+  .ind-container .section-tool {
+    display: flex;
+    flex-direction: column;
+  }
+  .ind-container .section-tool .tool-img {
+    width: 100%;
+    border-radius: 0;
+  }
+  .ind-container .section-tool .text-tool {
+    width: 100%;
+  }
+  .ind-container .section-tool .text-tool h1,
+  .ind-container .section-tool .text-tool p {
+    margin-top: 4%;
+    margin-bottom: 4%;
+    width: 100%;
+  }
 }
 .home-attention-grabber {
   margin-top: 3%;
@@ -295,6 +384,7 @@ footer div nav a {
   align-items: center;
   height: 360px;
   margin: 4% 2% 4% 2%;
+  margin-bottom: 17%;
   border-radius: 10px;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
@@ -325,6 +415,7 @@ footer div nav a {
   border-radius: 6px;
   border: 1px solid #98AFC7;
   font-size: 0.9rem;
+  background-color: white;
 }
 .products-container .product-card .product-btn:hover {
   background-color: #98AFC7;
