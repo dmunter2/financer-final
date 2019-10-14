@@ -372,7 +372,8 @@ footer div nav a {
   justify-content: center;
 }
 .home-attention-grabber .home-btn-container a {
-  margin: 0 3% 0 3%;
+  display: flex;
+  margin: 1% 0 1% 0;
 }
 .home-box-container {
   display: flex;
